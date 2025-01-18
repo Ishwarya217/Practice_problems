@@ -18,10 +18,10 @@ class Foursum{
             List<List<Integer>> result = new ArrayList<>();
             Arrays.sort(arr);           //sorting
             int n=arr.length;           //arrray length
-            for(int i=0;i<n;i++){
+            for(int i=0;i<n-3;i++){
             //skip for duplicates for i and j
             if(i>0 && arr[i]==arr[i-1])  continue;
-            for(int j=i+1;j<n;j++){     //j points to the next element of i
+            for(int j=i+1;j<n-2;j++){     //j points to the next element of i
             if(j>i+1 && arr[j]==arr[j-1])
                 continue;
             int left =j+1;           //left pointer will be next to the j 
